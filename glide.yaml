@@ -1,0 +1,6 @@
+package: github.com/alexeysoshin/SmsBird
+import:
+- package: github.com/smartystreets/goconvey
+- package: github.com/jtolds/gls
+- package: github.com/smartystreets/assertions
+- package: github.com/messagebird/go-rest-api

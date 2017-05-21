@@ -1,0 +1,12 @@
+hash: 521dbc451fd23f4b7cbf0869c1ba4e9e8505a636b2601c81c9eb6caa43bd5e45
+updated: 2017-05-21T14:52:57.919711616+03:00
+imports:
+- name: github.com/jtolds/gls
+  version: 77f18212c9c7edc9bd6a33d383a7b545ce62f064
+- name: github.com/messagebird/go-rest-api
+  version: c8643b4c74a7b7b89565aa6fbfa77ec555a2c830
+- name: github.com/smartystreets/assertions
+  version: f8459f92181409546d2762c9e9c4bedc23c92d76
+- name: github.com/smartystreets/goconvey
+  version: af8e7d560364b90f732a1d119d17b5506e50447d
+devImports: []
