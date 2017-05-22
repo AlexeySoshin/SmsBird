@@ -9,7 +9,8 @@ import (
 
 func main() {
 
-	key := flag.String("key", "test_gshuPaZoeEG6ovbc8M79w0QyM", "MessageBird API Key")
+	key := flag.String("key", "", "MessageBird API Key")
+	flag.Parse()
 
 	c := controller.NewController(*key)
 
@@ -17,6 +18,6 @@ func main() {
 
 	m.HandleFunc("/", c.SendSms)
 
-	log.Println("Server is up and running")
+	log.Printf("Server is up and running, key is %s\n", *key)
 	http.ListenAndServe(":8080", m)
 }

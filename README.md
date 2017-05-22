@@ -12,7 +12,7 @@ glide install
 
 ## Running
 ```
-go build && ./SmsBird -key <your_key>
+go build && ./SmsBird -key=<your_key>
 ```
 
 ## Using

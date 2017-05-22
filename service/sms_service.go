@@ -7,6 +7,7 @@ import (
 	"log"
 	"math"
 	"math/rand"
+	"strconv"
 	"time"
 )
 
@@ -67,7 +68,7 @@ func udh(ref int, total int, count int) string {
 // Send message using the client
 func (s *SmsService) send(message model.Message) {
 
-	recipients := []string{string(message.Recipient)}
+	recipients := []string{strconv.Itoa(message.Recipient)}
 	params := &messagebird.MessageParams{
 		Type:        "binary",
 		TypeDetails: messagebird.TypeDetails{"udh": udh(message.Reference, message.Total, message.Count)},
